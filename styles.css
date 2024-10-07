@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.background-container {
+  background-image: url('./ideia_login_era.jpeg'); /* Certifique-se de que o caminho está correto */
+  background-size: cover; /* Faz a imagem cobrir todo o contêiner */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita a repetição da imagem */
+  height: 100vh; /* Faz o contêiner ocupar 100% da altura da janela de visualização */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10%; /* Ajusta a posição do container a 70% da direita */
+}
+
+.logo-image {
+  max-width: 100%; /* A imagem não deve exceder a largura do contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+  margin: 20px 0; /* Espaço acima e abaixo da imagem */
+}
+
+.login-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  max-width: 90%; /* Garante que o contêiner não exceda 90% da largura da tela */
+  text-align: center;
+}
+
+.login-name{
+  opacity: 0.75;
+  color: #007BFF;
+  text-transform: uppercase
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-group label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-group input {
+  padding-right: 40px; /* Espaço para o botão de olho */
+}
+
+.toggle-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #007BFF;
+}
+
+.toggle-btn i {
+  font-size: 20px; /* Ajusta o tamanho do ícone */
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.signup, .reset-password, .back-to-login {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.signup a, .reset-password a, .back-to-login a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.signup a:hover, .reset-password a:hover, .back-to-login a:hover {
+  text-decoration: underline;
+}

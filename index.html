@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Login</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="background-container">
+    <div class="login-container">
+        <h2 class="login-name" id="form-title">Supplier Login</h2>
+        <img src="./gladio.png" alt="Logo" class="logo-image">
+        <h2 id="form-title">ComprAer e-RA</h2>
+      <form id="login-form">
+        <div class="input-group">
+            <input type="text" name="username" class="form-control" placeholder="Supplier ID" required autofocus />
+        </div>
+        <div class="input-group password-group">
+          <div class="password-container">
+            <input type="password" id="password" placeholder="Enter your password" required>
+            <button type="button" id="toggle-password" class="toggle-btn">
+              <i class="mdi mdi-eye"></i>
+            </button>
+          </div>
+        </div>
+        <button type="submit" class="btn">Login</button>
+        <p class="signup">New supplier? Register <a
+            href="https://www2.fab.mil.br/cabw/index.php/en/register-update-3"
+            target="_blank">here</a></p>
+        <p class="reset-password">Forgot your password? <a href="#" id="show-reset-form">Click here</a></p>
+      </form>
+
+      <!-- Formulário de Reset de Senha -->
+      <form id="reset-form" style="display: none;">
+        <p>Enter your login and registered email to receive the reset link:</p>
+        <br/>
+        <div class="input-group">
+            <input type="text" name="username" class="form-control" placeholder="Supplier ID" required autofocus />
+        </div>
+        <div class="input-group">
+            <input type="email" id="reset-email" placeholder="Type your email" required>
+        </div>
+        <button type="button" class="btn" id="reset-submit">Send</button>
+        <p class="back-to-login">Back to <a href="#" id="show-login-form">Login</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
